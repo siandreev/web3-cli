@@ -32,3 +32,4 @@ GANACHE_KEY=<private_key_for_ganache>
 web3> await web3.eth.getBalance(address)
 ```
 
+Also, you can use an injected variable `address` containing the wallet current address.
