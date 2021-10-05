@@ -20,9 +20,11 @@ cli.context.ropsten = () => setNewWeb3('ropsten', process.env.ROPSTEN_RPC);
 cli.context.local = () => setNewWeb3('local', process.env.LOCAL, process.env.LOCAL_KEY);
 cli.context.mainnet = () => setNewWeb3('ethereum mainnet', process.env.MAINNET_RPC);
 cli.context.matic = () => setNewWeb3('matic', process.env.MATIC_RPC);
+cli.context.moonriver = () => setNewWeb3('moonriver', process.env.MOONRIVER_RPC);
 cli.context.ganache = () => setNewWeb3('ganache', process.env.GANACHE, process.env.GANACHE_KEY);
 cli.context.bsc = () => setNewWeb3('bsc', process.env.BINANCE_RPC);
 cli.context.xDai = () => setNewWeb3('xDai', process.env.XDAI_RPC);
+cli.context.avalanche = () => setNewWeb3('avalanche', process.env.AVALANCHE_RPC);
 
 function setNewWeb3(title, provider, key = process.env.PRIVATE_KEY) {
     const web3 = new Web3(provider);
